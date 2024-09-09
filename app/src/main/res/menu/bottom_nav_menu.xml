@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item
+
+        android:id="@id/navigation_home"
+        android:icon="@drawable/shoping"
+        android:title="Home" />
+    <item
+        android:id="@id/navigation_dashboard"
+        android:icon="@drawable/ic_dining"
+        android:title="Dining" />
+    <item
+        android:id="@id/navigation_notifications"
+        android:icon="@drawable/ic_premium"
+        android:title="Premium" />
+    <item
+        android:id="@id/navigation_profile"
+        android:icon="@drawable/ic_bottamheart"
+        android:title="Heart" />
+</menu>

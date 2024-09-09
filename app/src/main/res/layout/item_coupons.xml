@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="152.5dp"
+        android:layout_margin="13dp"
+        android:outlineSpotShadowColor="#E23744"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:strokeColor="#f9faf9"
+        app:strokeWidth="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+
+        <ImageView
+            android:id="@+id/ivcouponsdiscount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/discount"/>
+
+
+        <TextView
+            android:id="@+id/tvOFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/outfit_medium"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/ivcouponsdiscount"
+            android:maxLength="40"
+            android:text="Flat $150 OFF"
+            />
+
+<TextView
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ivcouponsdiscount"
+    android:text="Add item worth 10 more to unlock"
+    android:textColor="#B30130EF"
+android:maxLines="1"
+    android:layout_marginTop="7dp"
+    android:layout_toRightOf="@id/ivcouponsdiscount"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:strokeWidth="0.7dp"
+                app:cardCornerRadius="5dp"
+
+                android:layout_toRightOf="@id/ivcouponsdiscount"
+                app:strokeColor="@color/orcolor"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/item"
+                >
+                <TextView
+                    android:id="@+id/tvCouponCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="GET125"/>
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/couponCard"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="0dp"
+           android:backgroundTint="#140130EF"
+            app:strokeWidth="0dp"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tapToApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="20dp"
+                android:textColor="#B30130EF"
+                android:text="TAP TO APPLY"/>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

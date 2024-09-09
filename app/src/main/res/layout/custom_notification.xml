@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/check_circle_fill" />
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Confirmed!"
+        android:fontFamily="@font/outfit_bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/outfit_regular"
+        android:textColor="@color/orcolor"
+        android:text="Your order #12345 has been confirmed."
+        />
+
+    <TextView
+        android:id="@+id/notification_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/orcolor"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Expected delivery: 30 mins"
+        android:textSize="14sp" />
+</LinearLayout>

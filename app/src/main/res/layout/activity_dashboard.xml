@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.Activity.Dashboard">
+
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+
+        android:layout_above="@id/llcarts"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph">
+
+    </fragment>
+
+
+
+    <LinearLayout
+        android:id="@+id/llcarts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:background="@drawable/bottamcurve">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="4"
+            android:background="@color/transparent"
+            tools:listitem="@layout/item_cart" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/showMoreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_above="@+id/llcarts"
+        android:padding="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/showMoreTextView"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            app:strokeWidth="0dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RED"
+                android:layout_gravity="center"
+                android:fontFamily="@font/outfit_bold"
+                android:text="show more"/>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <ImageView
+            android:id="@+id/crossImageView"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/multiply"
+            android:visibility="gone"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:itemActiveIndicatorStyle="@android:color/transparent"
+        app:itemBackground="@color/white"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@color/bottam_nev_text_selecter"
+        app:itemRippleColor="@color/white"
+        app:itemTextColor="@color/bottam_nev_text_selecter"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+
+
+
+</RelativeLayout>

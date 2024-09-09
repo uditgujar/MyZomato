@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="202.5dp"
+        android:layout_margin="13dp"
+        android:outlineSpotShadowColor="#E23744"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:strokeColor="#f9faf9"
+        app:strokeWidth="0dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:id="@+id/dishImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/thali" />
+
+
+                <TextView
+                    android:id="@+id/tvdishesNameMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dishImage"
+                    android:layout_marginStart="5dp"
+                    android:text="Best Combo Thali"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:maxLength="20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRestaurantNameMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdishesNameMenu"
+                    android:layout_marginStart="5dp"
+                    android:text="Serves 2"
+                    android:textColor="@color/orcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdishesNameMenu"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/outfit_regular"
+                    android:text="750/-"
+                    android:textColor="@color/orcolor"
+                    android:textSize="12sp" />
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/tvPrice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="#E23744"
+                    app:cardCornerRadius="6dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="Add+"
+                        android:textColor="@color/white" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvPrice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="visible">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvaddtest2"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+
+                        app:cardBackgroundColor="#E23744"
+                        app:cardCornerRadius="6dp">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="-"
+                            android:textSize="25dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/white" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="0"
+                            android:textColor="@color/white" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="+"
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+<!--
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/cvadd"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="#C5BD00"
+                    app:cardCornerRadius="6dp">
+
+                    <TextView
+                        android:id="@+id/Schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="Schedule"
+                        android:textColor="@color/white" />
+
+
+                </androidx.cardview.widget.CardView>
+-->
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>

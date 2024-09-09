@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Activity.CouponsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llCoupons"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/backCoupons"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tvPaymentcv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1.3"
+            android:fontFamily="@font/outfit_bold"
+            android:text="Payment coupons for you"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llCoupons"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCoupons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+tools:listitem="@layout/item_coupons">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

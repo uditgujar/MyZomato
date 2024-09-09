@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/containerBottomPlayer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/RED"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/itemAdded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 items added"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/outfit_medium"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvfullprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 items added! You are saving 234 "
+        android:gravity="center"
+        android:fontFamily="@font/outfit_medium"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

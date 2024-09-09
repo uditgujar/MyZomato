@@ -1,0 +1,33 @@
+<!-- res/navigation/nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.uditpatidar.zomatoapp.ui.Fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.uditpatidar.zomatoapp.ui.Fregment.DiningFragment"
+        android:label="Dining"
+        tools:layout="@layout/fragment_dining" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+       android:name="com.uditpatidar.zomatoapp.ui.Fregment.HeartFragment"
+        android:label="Heart"
+        tools:layout="@layout/fragment_heart"
+        />
+
+    <fragment
+
+        android:label="Premium"
+        android:name="com.uditpatidar.zomatoapp.ui.Fregment.PremiumFragment"
+        android:id="@+id/navigation_profile"
+        tools:layout="@layout/fragment_premium"/>
+
+</navigation>

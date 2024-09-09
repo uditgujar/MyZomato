@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:strokeWidth="0.1dp"
+            app:cardCornerRadius="39dp"
+            app:strokeColor="#12000000"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:id="@+id/photography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/helthy" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/photographyitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Helthy"
+            android:textColor="@color/black"
+            android:fontFamily="@font/outfit_medium"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

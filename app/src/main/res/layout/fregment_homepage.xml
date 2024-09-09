@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<!--
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvloacation"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#F1414F"
+                    app:cardCornerRadius="42dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/location"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:fontFamily="@font/outfit_bold"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/cvloacation"
+                    android:textSize="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/ivprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profileiv"
+                    android:layout_alignParentEnd="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_normal"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@+id/ivprofile"/>
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="32dp" />
+
+
+            </LinearLayout>
+
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                app:dampingRatio="0.5"
+                app:dotsColor="#F1414F"
+                app:dotsCornerRadius="6dp"
+                app:dotsSize="10dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeColor="@color/dotcolor"
+                app:dotsStrokeWidth="0.7dp"
+                app:stiffness="300" />
+            &lt;!&ndash; <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/rvphoto"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                 tools:listitem="@layout/item_poster" />&ndash;&gt;
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#F4F8FD"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:gravity="center_vertical"
+                    android:text="Eat what makes you happy"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvposter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_dishes" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="#F4F8FD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="127 restaurants around you"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="end"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="View all"
+                    android:textColor="@color/green"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableRight="@drawable/viweall" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_restaurant" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+-->
+
+</RelativeLayout>
+

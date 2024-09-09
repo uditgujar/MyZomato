@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mcvzomato">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llcart"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/backCart"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/back" />
+
+
+            <TextView
+                android:id="@+id/tvCartNameRestauranrt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="Restaurant at this Street"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="13dp"
+                        android:outlineSpotShadowColor="@color/midgreen"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:strokeColor="#f9faf9"
+                        app:strokeWidth="0dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvCartDishes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/item_cartorder">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="13dp"
+                        android:outlineSpotShadowColor="@color/midgreen"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:strokeColor="#f9faf9"
+                        app:strokeWidth="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlRestaurantcoupons"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+
+
+                                <ImageView
+                                    android:id="@+id/ivCoupons"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/discount" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toRightOf="@+id/ivCoupons"
+                                    android:fontFamily="@font/outfit_regular"
+                                    android:text="View all restaurant Coupons"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/arrow"
+                                    app:tint="@color/orcolor" />
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:id="@+id/vResturentCupon"
+                                android:layout_marginHorizontal="10dp"
+                                android:visibility="visible"
+                                android:background="@color/orcolor" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlapplyedcoupon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                >
+
+
+
+                                <ImageView
+                                    android:id="@+id/ivDiscount"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/check_circle_fill" />
+
+
+
+                                <TextView
+                                    android:id="@+id/tvSavedAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="You saved 0 with 'No Coupon'"
+                                    android:textSize="14sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toRightOf="@id/ivDiscount"
+                                    android:fontFamily="@font/outfit_regular"
+                                    android:textColor="@color/black" />
+
+
+                                <TextView
+                                    android:id="@+id/removeCouponTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="10dp"
+                                    android:textColor="@color/RED"
+                                    android:textSize="14dp"
+                                    android:padding="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:text="Remove" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="13dp"
+                        android:outlineSpotShadowColor="@color/midgreen"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:strokeColor="#f9faf9"
+                        app:strokeWidth="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/wacth" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/outfit_regular"
+                                    android:text="Delivery in 30 mins"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_below="@+id/rldishesCart"
+                                android:layout_marginHorizontal="10dp"
+                                android:background="@color/orcolor" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tvTotalPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/outfit_bold"
+                                    android:text="Total Price: "
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tvdiscountdd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/outfit_regular"
+                                    android:text="Incl. taxes, charges &amp; donation"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationViewcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/celebration"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"
+        tools:ignore="MissingClass" />
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvzomato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/midgreen"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottamcurve"
+        app:cardElevation="5dp"
+        app:strokeColor="#f9faf9"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zomato Money"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/outfit_medium"
+                android:textSize="15dp"
+                android:textColor="@color/orcolor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orcolor"
+                android:textSize="8dp"
+                android:layout_marginStart="18dp"
+                android:text="Balance:0 | Add money or claim a gift card"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvSeleteAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                app:strokeWidth="0dp"
+                android:elevation="5dp"
+                android:backgroundTint="@color/RED"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_regular"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:text="Select Address at next step"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

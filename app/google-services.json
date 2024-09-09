@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513244903132",
+    "project_id": "zomatoapp-55a71",
+    "storage_bucket": "zomatoapp-55a71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513244903132:android:fe02ada93e2d7b838d2619",
+        "android_client_info": {
+          "package_name": "com.uditpatidar.zomatoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKjf7kcjk3ltGxIqyBejMaoqOgz9K1WYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

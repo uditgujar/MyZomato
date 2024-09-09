@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_colour">#DBDDE1</color>
+    <color name="blue">#FC0130EF</color>
+    <color name="text">#858585</color>
+    <color name="b_button">#CD314EC6</color>
+    <color name="black_light">#4A000000</color>
+    <color name="light">#9F9393</color>
+    <color name="button1">#c67c4e</color>
+    <color name="profile_back">#f1f3f6</color>
+    <color name="sky_blue">#0A8ED9</color>
+    <color name="blue_ocean">#A0DAFB</color>
+    <color name="black_n">#00000000</color>
+    <color name="transparent">#000D0D0D</color>
+    <color name="black80">#CC000000</color>
+    <color name="back_loction">#6f9ab4</color>
+    <color name="white_new">#F2F2F2</color>
+    <color name="red_01">#FF0000</color>
+    <color name="RED">#E23744</color>
+    <color name="sky">#05BDFD</color>
+
+
+    <color name="parseColor">#FF0000</color>
+    <color name="examgc">#1A00A651</color>
+    <color name="green">#00A551</color>
+    <color name="cardviweexam">#E8EEF6</color>
+    <color name="viwecolor">#E0E0FF</color>
+    <color name="orcolor">#6F7C8E</color>
+    <color name="createcolor">#263238</color>
+    <color name="cardgcolor">#01170C</color>
+    <color name="midgreen">#00A651</color>
+    <color name="statusbar">#DAF1E6</color>
+    <color name="AliceBlue">#F4F8FD</color>
+    <color name="viweno">#E8EEF6</color>
+    <color name="dotcolor">#626568</color>
+    <color name="gviwe">#4000A651</color>
+    <color name="HorizontallineColor">#00A651</color>
+    <color name="lightcolor">#D9D9D9</color>
+    <color name="midblack">#01170C</color>
+    <color name="bgdevicecard">#DAF1E6</color>
+    <color name="status_bar_color">#1C00984A</color>
+    <color name="CVprofilecolor">#0D00A651</color>
+</resources>

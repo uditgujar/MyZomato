@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ZomatoApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        //REMOVE DEFAULT SPLASH SCREEN FOR ANDROID 12 OR ABHOVE
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="Theme.ZomatoApp" parent="Base.Theme.ZomatoApp" />
+</resources>
